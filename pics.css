@@ -7,6 +7,7 @@ body{
 }
 .container{
     display: flex;
+    flex-wrap: wrap;
 }
 .section{
     flex: 25%;
@@ -20,7 +21,9 @@ img{
 }
 img:hover{
     transform: scale(1.1);
+    transition: .4s ease-in;
     border-radius: 5px;
+    flex: 100%;
 }
 .section about{
     width: auto;
@@ -29,4 +32,33 @@ img:hover{
     font-size: 1vw;
     color: black;
     background-color: transparent;
+}
+figcaption{
+    text-align: center;
+    font-family: serif;
+    font-weight: 500;
+}
+@media (max-width:991px) {
+    .section{
+        flex: calc(100/3);
+    }
+    figcaption{
+        text-align: center;
+    }
+}
+@media (max-width:767px) {
+    .section{
+        flex: 50%;
+    }
+    figcaption{
+        text-align: center;
+    }
+}
+@media (max-width:767px) {
+    .section{
+        flex: 100%;
+    }
+    figcaption{
+        text-align: center;
+    }
 }
