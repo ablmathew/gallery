@@ -27,11 +27,17 @@ img:hover{
 }
 .section about{
     width: auto;
-    height: auto;
+    height: 250px;
+    justify-content: center;
+    text-align: center;
     font-family: monospace;
     font-size: 1vw;
     color: black;
     background-color: transparent;
+}
+.section h2{
+    -webkit-text-stroke: 2px red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 figcaption{
     text-align: center;
